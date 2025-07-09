@@ -45,14 +45,14 @@ just run:
 ```
 Python Feature_selection_forward_ResNet_TDvsCPu.py
 ```
-for forward future selection of ResNet - TDvsCPu.
+for forward feature selection of ResNet - TDvsCPu.
 
 And run:
 ```
 Python Feature_selection_backward_ResNet_TDvsCPu.py
 ```
 
-for backward future selection of ResNet - TDvsCPu.
+for backward feature selection of ResNet - TDvsCPu.
 
 The ranking of angles will be displayed in the file name like: "_3_1_5_6_...". You can also save it to a .npy file to use it easily.
 The Notebook [Feature_selection_evaluation.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Feature_selection_evaluation.ipynb) how to get the accuracy of each step of feature selection.
