@@ -75,5 +75,7 @@ The evaluation of robustness is performed using STD. For feature selection, it i
 The evaluation of Fidelity is performed using the $\Delta accuracy$ after remove half of important/ no important angles based on the ranking of the important angles of different XAI methods. The calculation is manual, so there is no code. The "Drop - first" and "Drop - last" items in this [Excel](https://docs.google.com/spreadsheets/d/1QGWbR75-wQdB0ambuQJdiiRhmNCxH9V6WyqNS4IUEzc/edit?usp=sharing) table show the process. And the Plot of the results shows in [Plot_of_quantitative_analysis_fidelity.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Plot_of_quantitative_analysis_fidelity.ipynb).
 
 
+## For prediction of given cycles
 
+[Prediction_cycles.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Prediction_cycles.ipynb) shows how to do it. You can use numpy to load any cycles with shape [n, 22, 101] to do it.
 
