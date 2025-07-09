@@ -8,7 +8,7 @@ Based on the PhD research, it is divided into three parts:
 
 ## Install & Environment
 
-This implementation is Python 3 on a PC running the Ubuntu 24.04.2 LTS operating system. In theory, it supports any system with a Linux kernel. For Windows and MacOS, testing has not been conducted due to resource limitations.
+This implementation is Python 3.9.11 on a PC running the Ubuntu 24.04.2 LTS operating system. In theory, it supports any system with a Linux kernel. For Windows and MacOS, testing has not been conducted due to resource limitations.
 
 First clone the project
 ```
@@ -37,6 +37,8 @@ You can download “paper1_trained_model.zip” from the provided dataset, unzip
 
 ### XAI + Diagnostic Tools
 
+You can download and unzip file "Paper2_trained_model.zip" and copy them to the repository to get the trained model. Or train it by yourself.
+
 #### For the Feature selection, 
 just run:
 
@@ -52,15 +54,16 @@ Python Feature_selection_backward_ResNet_TDvsCPu.py
 
 for backward future selection of ResNet - TDvsCPu.
 
-
+The ranking of angles will be displayed in the file name like: "_3_1_5_6_...". You can also save it to a .npy file to use it easily.
+The Notebook [Feature_selection_evaluation.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Feature_selection_evaluation.ipynb) how to get the accuracy of each step of feature selection.
 
 #### To evaluate the LIME, Deep SHAP and Integrated gradients:
 
-Just open the [XAI-Captum-run-save.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/XAI-Captum-run-save.ipynb). You will see how it be implemented with Captum by ResNet trained by dataset TDvsCPu. After you get the raw value of the results, the [XAI_total_relevance_Norm_TDvsCPu](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/XAI_total_relevance_Norm_TDvsCPu) shows you how I do the normalization and save the ranking of angles.
+Just open the [XAI-Captum-run-save.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/XAI-Captum-run-save.ipynb). You will see how it be implemented with Captum by ResNet trained by dataset TDvsCPu. After you get the raw value of the results, the [XAI_total_relevance_Norm_TDvsCPu.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/XAI_total_relevance_Norm_TDvsCPu.ipynb) shows you how I do the normalization and save the ranking of angles.
 
 
 #### To plot the results
-Just open the [Plot_TDvsCPu_all_XAI.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Plot_TDvsCPu_all_XAI.ipynb). It loads all XAI results and plot with sequential training accuracy (proved less critical angles can achieve better performance). If you just need to plot the results, you can just download "Paper 2 - XAI results.zip" file, unzip it and then copy "FS_result","XAI_ranking" and "XAI_value" of TDvsCPu to the repository to save the time.
+Just open the [Plot_TDvsCPu_all_XAI.ipynb](https://github.com/LANZhengyang/PhD_Code_Zhengyang_LAN/blob/main/Plot_TDvsCPu_all_XAI.ipynb). It loads all XAI results and plot with sequential training accuracy (proved less critical angles can achieve better performance). If you just need to plot the results, you can just download "Paper 2 - XAI results.zip" file, unzip it and then copy "FS_result","XAI_ranking" and "XAI_value" of TDvsCPu to the repository to the repository to save the time.
  
 ### XAI evaluation (quantitative analysis)
 
