@@ -2,9 +2,10 @@
 This repository contains the code of Zhengyang LAN's work during his PhD.
 
 Based on the PhD research, it is divided into three parts:
-- Deep learning-based 3DGK diagnostic tool
-- XAI + Diagnostic Tools
-- XAI evaluation (quantitative analysis)
+- Deep learning-based 3DGK diagnostic tool (Paper: [Towards a diagnostic tool for neurological gait disorders in childhood combining 3D gait kinematics and deep learning](https://www.sciencedirect.com/science/article/pii/S0010482524001793))
+- XAI + Diagnostic Tools Abstract:[Analysis Of Deep Learning Classification Methods Of
+3D Kinematic Data For Neurological Gait Disorders](https://brgm.hal.science/LAB-STICC_T2I3/hal-04576157v1)
+- XAI evaluation (quantitative analysis) (Paper come soon)
 
 ## Install & Environment
 
